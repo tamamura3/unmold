@@ -1,0 +1,33 @@
+set names utf8;
+set foreign_key_checks = 0;
+USE overflowing;
+
+
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Cold Shower','When you try this one, You might start laughing because it’s too hard. However, There are so many articles about the benefits of taking cold shower.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Have A Conversation With Strangers','We are born in society. It's natural to communicate with people. Start a conversation with random completely strangers.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Eat less','Eating too much makes you gain, unhealthy and sleepy. Try reduce your usual meal half amount.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Go Outside With No Shoes On','Feel the texture of the ground. Also try inside the buildings like stores.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Read Book Backwards','Welcome to the world that you see effects first then causes. Every book turned to mistery book.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Try Foods You Have Never Eaten','At grocery store, pick ingredients you had never eaten.At restaurant, order something you had never tried.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Dance Like Nobody's Watching','Just dance like you do when you're alone in your room.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Write A Sitcom','Watching is easy. Making is not easy. Add your episode to your favorite sitcom by writing script. Show it to someone and get a feedback.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Wake up at 5AM','Maybe it's not that good for you as much as they say. Let's find out.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Cook In A Different Way','Steam fruits. Eat fish raw. Change the way to eat eggs.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Wear Clothes Inside Out','You can get a unique and different style with just your regular clothes.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Do Skipping For Moving','Back in the 1960s, running for exercise was weird thing. Skipping might be the new walking or runnning.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Quit Job','No matter how your life goes by quitting current job, I think you can learn something from it.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Leave Your Phone At Home','Feel what life was like in the '80s.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Raise Your Hand Always','At class or meeting, Every time you face a situation that you can ask questions or tell your opinions, Alwaysraise your hand and tell yours.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Hitchhiking','You don't need to be poor or a traveler to do hitchhiking.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Let the Barber Decide Your Hairstyle','Tell your barber to do whatever he/she wants to do. Close your eyes and just wait...');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('2nd language day','Everything you speak, read, hear, watch, Do it in your 2nd langage.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Pay Next Person's Coffee','Just to be nice and make people happy.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Play Sports You've Never Played','When grown up, You don’t play sports that much, do you?');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Delete All Of Your SNS Acount','Or start one if you don't have any.The impact of SNS is huge nowadays.Great way to experience new world.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Take A Walk With No Shoes On','Feel the texture of the gound. Also try inside a building like a store.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('No Plastic Day','No plastic bottles, plastic bags, plastic package snacks for a day.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Go Out In The Rain Without Umbrella','It is just water.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Ask Someone You Barely Know To Dinner','Or lunch. It might be awkward but enjoy that atmosphere too.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Go To A Party That You're Not Invited','You can meet people from different world.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Say No','If you really don’t wanna go, say no.If you really want to do that, say no. Sometimes, it’s ok to be honest to your heart and live your life.');
+INSERT INTO T_CHALLENGE (challenge_name, description)VALUES('Sit Someone’s Seat Purposely','This one is from HIS ARTICLE of the website called “THE MONK LIFE”.You can try this on airplane or any reserved seating events like concert.Almost 100%, You will be talking with completely stranger.');

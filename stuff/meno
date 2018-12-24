@@ -1,0 +1,7 @@
+input max lengths setting
+
+name 15
+password 30
+mail 200
+review text 3500
+contact form text 2000
