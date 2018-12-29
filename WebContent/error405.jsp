@@ -12,7 +12,7 @@
 <div class="body-wrapper">
 <h1>Sorry, the page you requested was not found.</h1>
 
-<a href="/GetOut/top"><div class="btt">Back to top page</div></a>
+<a href="/unmold/top"><div class="btt">Back to top page</div></a>
 
 </div>
 </body>

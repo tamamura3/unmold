@@ -1,0 +1,425 @@
+@charset "UTF-8";
+
+/*
+f form
+t title
+w wrapper
+c content
+msg message
+btn button
+ */
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+/* █▀▀ █▀▀█ █▀▄▀█ █▀▄▀█ █▀▀█ █▀▀▄
+   █░░ █░░█ █░▀░█ █░▀░█ █░░█ █░░█
+   ▀▀▀ ▀▀▀▀ ▀░░░▀ ▀░░░▀ ▀▀▀▀ ▀░░▀ */
+body{
+	background-color: midnightblue;
+	color: lavenderblush;
+	position: relative;
+	display: flex; /* footer固定のため全体をflex指定 */
+	flex-direction: column; /* flex要素が縦に並ぶように */
+	min-height: 100vh; /* 高さが画面サイズいっぱいになるように設定　どうやらflexコンテンツにflex:番号　で大きな番号をつけたものが拡大されて100％を実現するらしい */
+}
+
+.body-wrapper, .body-wrapper-index{
+	text-align: center;
+	flex: 1; /* フッター固定のため。bodyをflexにしてメインのbody-wrapperを1にした　flex:番号　でコンテンツの順番を変えられるはずだが vh設定した場合の挙動が異なるのか、この場合は番号が大きい物を拡大して100vhを実現している　*/
+}
+.challenge-t{
+	padding-bottom: .5em;
+	margin-top: .5em;
+}
+
+.logo, .single-challenge, .dropdown-content, .footer-about-content, input,
+textarea, button, .single-review-w, .hello-name, .mypage-challenge-menu,
+.mypage-single-challenge-w, .mypage-setting-menu, .fa-plus, .btt, .myreview-text,
+.review-delete-btn, .userinfo-edit-btn, .confirm-delete-btn{
+	padding: 0.3em;
+	border: solid 1px lavenderblush;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.logo:hover, .dropdown-content:hover, .more-btn:hover, button:hover, .hello-name:hover,
+.mypage-challenge-menu:hover, .fa-plus:hover, .btt:hover, .userinfo-edit-btn:hover,
+.mypage-setting-menu:hover, .confirm-delete-btn:hover, .footer-about-content:hover,
+.review-delete-btn:hover{
+	background-color: lightcoral;
+}
+
+a {
+	text-decoration: none;
+	color: lavenderblush;
+}
+
+/* 共通ボタン */
+button{
+	padding: .1em .3em;
+	background-color: midnightblue;
+	color: lavenderblush;
+}
+
+.dropbtn-icon{
+	width: 2.4em;
+	height: auto;
+	margin: .5em;
+
+}
+
+/* フォーム関係 */
+form{
+	padding: 1em;
+}
+input{
+	width: 100%;
+	background-color: midnightblue;
+	color: lavenderblush;
+	padding: .5em;
+}
+textarea{
+	width: 100%;
+	height: 5em;
+	background-color: midnightblue;
+	color: lavenderblush;
+}
+
+/*█░░█ █▀▀ █▀▀█ █▀▀▄ █▀▀ █▀▀█
+  █▀▀█ █▀▀ █▄▄█ █░░█ █▀▀ █▄▄▀
+  ▀░░▀ ▀▀▀ ▀░░▀ ▀▀▀░ ▀▀▀ ▀░▀▀*/
+
+.logo img {
+	width: 25vw;
+	height: auto;
+}
+
+.dropdown-wrapper{
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: midnightblue;
+	padding: 2em;
+	z-index: 2;
+	width: 100%;
+	border-bottom: double 1px #4b4d6b;
+}
+
+.dropdown-content{
+	display: block;
+	margin-bottom: .7em;
+}
+/* ドロップダウンボタン押下でクラスに追加/削除する */
+.show{
+	display: block;
+}
+
+.nav-wrapper{
+	float: right;
+	vertical-align: middle;
+}
+
+/* ░▀░ █▀▀▄ █▀▀▄ █▀▀ █░█
+   ▀█▀ █░░█ █░░█ █▀▀ ▄▀▄
+   ▀▀▀ ▀░░▀ ▀▀▀░ ▀▀▀ ▀░▀ */
+
+.single-challenge{
+	width: 90%;
+	border-radius: 8px;
+	margin: 1.8em 1em;
+	padding: 0;
+}
+
+.copyright{
+	margin-top: 1em;
+	text-align: center;
+	font-size: .5em;
+}
+
+/* █▀▀█ █▀▀▄ █▀▀█ █░░█ ▀▀█▀▀
+   █▄▄█ █▀▀▄ █░░█ █░░█ ░░█░░
+   ▀░░▀ ▀▀▀░ ▀▀▀▀ ░▀▀▀ ░░▀░░ */
+
+
+
+.about-title, .review-t, .sent-massage, .description-t, .single-challenge-t{
+	display: inline-block;
+	border-bottom: dotted 1px lavenderblush;
+
+}
+
+.about-wrapper img{
+	width: 20vw;
+	height: auto;
+}
+
+
+
+
+/* █▀▀ ░▀░ █▀▀▀ █▀▀▄   █░░█ █▀▀█
+   ▀▀█ ▀█▀ █░▀█ █░░█   █░░█ █░░█
+   ▀▀▀ ▀▀▀ ▀▀▀▀ ▀░░▀   ░▀▀▀ █▀▀▀ */
+
+
+
+.signup-header-w img{
+	width: 100%;
+	height: auto;
+	padding-bottom: .5em;
+}
+
+.signup-img-w{
+	margin: 0 2em;
+	width: 30%;
+	height: auto;
+	display: inline-block;
+}
+
+
+
+.single-review-w{
+	display: block;
+}
+.review-text{
+	padding: .5em;
+	padding-left: 1em;
+	text-align: left;
+}
+.reviewer-name{
+	text-align: right;
+	padding: .5em;
+}
+
+.review-text::first-letter{
+	font-size: 3em;
+}
+.mypage-single-challenge-w {/* mypageの各チャレンジの一番大きいラッパー */
+	width: 90%;
+	margin-right:auto;
+	margin-left: auto;
+	margin-bottom: 2.5em;
+	text-align: left;
+	box-shadow: .5em .5em 0px 0px rgba(255,255,255,1);
+}
+
+.mypage-challenge-t{
+	display:block;
+	font-size: 1.5em;
+	padding-top: .2em;
+	padding-left: .2em;
+}
+.mypage-challenge-nav-w{
+	display: block;
+	font-size: 0.7em;
+	float: right;
+}
+
+.review-form-text{
+	text-align: left;
+	padding: 2em;
+}
+
+
+/* █▀▀█ █▀▀█ █▀▀▄ █▀▀▄ ░▀░ █▀▀▄ █▀▀▀
+   █░░█ █▄▄█ █░░█ █░░█ ▀█▀ █░░█ █░▀█
+   █▀▀▀ ▀░░▀ ▀▀▀░ ▀▀▀░ ▀▀▀ ▀░░▀ ▀▀▀▀ */
+.more-btn, .review-t, .description-t{
+	padding: .5em;
+}
+.challenge-description{
+	padding: 1em;
+}
+
+/* トップはahivementbtnを密接させるために0 */
+.single-challenge-t{
+	margin: 0 1.5em 1.5em 1.5em;
+}
+
+.achivement-btn-w{
+	padding: 0;
+	text-align: left;
+}
+
+.fa-medal, .fa-plus{
+	padding: .1em;
+	text-align: left;
+	margin-left: 1em;
+}
+
+.myreview-text{
+	text-align: left;
+	padding: 1.4em;
+	margin-top: .4em;
+}
+
+.review-delete-btn{
+	padding: .1em .7em;
+	margin-top: 1em;
+}
+
+.userinfo-w{
+	text-align: left;
+}
+
+.userinfo-t-2{
+	font-weight: bold;
+	margin: 0 1em;
+	position: relative;
+}
+
+.userinfo-edit-btn{
+	position: absolute;
+	top: 3px;
+	right: 5px;
+	font-weight: normal;
+	font-size: .7em;
+	padding: 3px 5px;
+}
+
+.userinfo-c{
+	border-bottom: 1px solid lavenderblush;
+	margin:1.5em;
+}
+
+/* █▀▄▀█ █▀▀█ █▀▀█ █▀▀▀ ░▀░ █▀▀▄
+   █░▀░█ █▄▄█ █▄▄▀ █░▀█ ▀█▀ █░░█
+   ▀░░░▀ ▀░░▀ ▀░▀▀ ▀▀▀▀ ▀▀▀ ▀░░▀ */
+.about-title, .signup-t, .login-t,.mypage-t, .description-t, .userinfo-t, .confirm-delete-btn{
+	margin: 1.5em;
+}
+.btt{
+	margin: 3em;
+}
+
+.contact-form-wrapper, .review-w, .about-wrapper, .forgetpass{
+	margin-top: 2em;
+}
+
+.account-setting-w{
+	margin-top: 6em;
+}
+.about, .about-wrapper, .mypage-accountmenu, .delete-account-t{
+	margin-bottom: 1em;
+}
+.signup-header-w, .review-t{
+	margin-bottom: 2em;
+}
+.header-wrapper, .editinfo-f, .single-review-w{
+	margin-bottom: 3em;
+}
+.hello-name{
+	margin-right: 1em;
+}
+
+/* █▀▀ █▀▀█ █▀▀▄ ▀▀█▀▀
+   █▀▀ █░░█ █░░█ ░░█░░
+   ▀░░ ▀▀▀▀ ▀░░▀ ░░▀░░ */
+
+body, input, button, textarea{
+	font-family: 'Raleway', sans-serif;
+}
+
+.challenge-t, .single-challenge-t, .mypage-challenge-t, .form-challenge-t,
+.myreview-t span{
+	font-family: 'Pacifico', cursive;
+}
+
+{
+font-family: 'Kumar One Outline', cursive;
+}
+
+/* █░░ █▀▀█ █▀▀▀ ░▀░ █▀▀▄
+   █░░ █░░█ █░▀█ ▀█▀ █░░█
+   ▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀ ▀░░▀ */
+.result-msg, .colored-link{
+	color: orange;
+}
+
+.error-msg{
+	color: red;
+}
+
+/* █▀▀█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀
+   █░░█ █▄▄█ █▄▄▀ ░░█░░ ▀▀█
+   █▀▀▀ ▀░░▀ ▀░▀▀ ░░▀░░ ▀▀▀
+   ・サイト全箇所一気に変更したくなる要素かどうか*/
+
+/* border-bottom */
+.challenge-description, .challenge-t, .about{
+border-bottom: solid 1px lavenderblush;
+}
+body, .button{
+	font-size: 1em;
+}
+.footer-about-content, stuff-text, .forgetpass, .review-form-text, .review-delete-btn,
+.no-contents{
+	font-size: .7em;
+}
+input, textarea, .sent-massage, .delete-account-t, .myreview-t{
+	font-size: 1.5em;
+}
+.challenge-t, .about-title, .signup-t, .login-t, .single-challenge-t,
+.form-challenge-t, .msg-a, .userinfo-t, .editinfo-t, .logout-msg{
+	font-size: 2em;
+}
+
+.mypage-t{
+	font-size: 4em;
+	font-family: 'Kumar One Outline', cursive;
+}
+
+
+/* 最低800＝800以上=PC */
+@media screen and (min-width: 800px){
+	body{
+	font-size: 1.5em;
+	}
+	.single-challenge{
+	width: 42vw;
+	}
+	.body-wrapper{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.dropbtn-icon{
+	margin: 1em;
+	}
+	.signup-header-w img{
+	width: 70%;
+	height: auto;
+	padding: 1em;
+	}
+	.about-contents-wrapper{
+	font-size: 1.5em;
+	}
+	.hello-name{
+	margin-right: 2em;
+	}
+	.about-wrapper{
+	margin-top: 8em;
+	}
+	.review-w{
+	margin-top: 4em;
+	}
+}
+
+
+/* 最低600=600以上＝タブレット */
+@media screen and (min-width: 600px){
+
+	body{
+	font-size: 1.2em;
+	}
+	.single-challenge{
+	width: 42vw;
+	}
+	.body-wrapper{
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+}

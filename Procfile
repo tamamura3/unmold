@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* net.getout.main.BeforeIndex
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* net.unmold.main.BeforeIndex
