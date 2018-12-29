@@ -6,9 +6,6 @@
   <packaging>jar</packaging>
   <build>
   <finalName>unmold</finalName>
-    <properties>
-    <tomcat.version>8.5.23</tomcat.version>
-  </properties>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
