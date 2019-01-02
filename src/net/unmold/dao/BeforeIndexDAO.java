@@ -11,6 +11,7 @@ import net.unmold.beans.Challenge;
 public class BeforeIndexDAO {
 
 	public List<Challenge> getChallenge() {
+		System.out.println("in beforeindexDAO");
 
 		List<Challenge> list = new ArrayList<Challenge>();
 		Driver driver = new Driver();
