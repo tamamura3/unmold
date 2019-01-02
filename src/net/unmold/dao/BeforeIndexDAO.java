@@ -17,7 +17,7 @@ public class BeforeIndexDAO {
 
 		try {
 			Connection con = driver.getConnection();
-			String sql = "SELECT * FROM t_challenge";
+			String sql = "SELECT * FROM public.t_challenge";
 			PreparedStatement ps = con.prepareStatement(sql);
 
 			ResultSet rs = ps.executeQuery();
