@@ -15,6 +15,7 @@ import net.unmold.dao.BeforeIndexDAO;
 public class BeforeIndex extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println("before index class starts");
 		BeforeIndexDAO beforeIndexDAO = new BeforeIndexDAO();
 		List<Challenge> list = beforeIndexDAO.getChallenge();
 
