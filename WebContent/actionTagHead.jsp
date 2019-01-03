@@ -1,6 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 入れるとレスポンシブになる -->
-<link rel="stylesheet" type="text/css" href="/unmold/style.css">
+<link rel="stylesheet" type="text/css" href="/unmold/WebContent/style.css">
 <script src="index.js"></script>
 <link
 	href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Outline|Bungee+Shade|Diplomata+SC|Fascinate+Inline|Fugaz+One|Kumar+One+Outline|Londrina+Outline|Megrim|Molle:400iOleo+Script+Swash+Caps|Pacifico|Raleway:500i|Reem+KufiUbuntu:500i"
