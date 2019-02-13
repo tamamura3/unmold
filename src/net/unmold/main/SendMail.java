@@ -16,11 +16,11 @@ public class SendMail {
 
 	public void SendMailExecute(String mail, String token) {
 
-		String from = "kaneko.naoki.0620@gmail.com"; //Sender's email
+		String from = ""; //Sender's email
 		String crlf = System.getProperty("line.separator");
 
-		final String username = "kaneko.naoki.0620@gmail.com";
-		final String password = "naotestnao3";
+		final String username = "";
+		final String password = "";
 
 		String host = "smtp.gmail.com";
 
@@ -55,10 +55,10 @@ public class SendMail {
 
 	public void sendMailForResetPass(String mail, String token) {
 
-		String from = "kaneko.naoki.0620@gmail.com"; //Sender's email
+		String from = ""; //Sender's email
 
-		final String username = "kaneko.naoki.0620@gmail.com";
-		final String password = "naotestnao3";
+		final String username = "";
+		final String password = "";
 
 		String host = "smtp.gmail.com";
 
